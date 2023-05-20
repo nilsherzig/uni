@@ -1,7 +1,3 @@
----
-status: public
----
-
 # Protokoll 2
 
 > Code files can also be found at [src](./src)
