@@ -120,3 +120,9 @@ all:
 	make run
 	make connect
 ```
+
+create compile-commands.json - needed to get the clangd lsp server running: 
+
+```bash
+bear -- make
+```
