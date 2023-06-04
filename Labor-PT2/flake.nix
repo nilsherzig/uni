@@ -7,10 +7,10 @@
         pkgs = nixpkgs.legacyPackages.x86_64-linux.pkgs;
     in {
         devShells.x86_64-linux.default = pkgs.mkShell {
-            name = "pt2-lab-env";
+            name = "pt2-lab";
             buildInputs = [
                 pkgs.gradle
-                pkgs.jdk8
+                pkgs.jdk17
             ];
         };
     };

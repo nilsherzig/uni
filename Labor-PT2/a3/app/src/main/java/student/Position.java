@@ -51,7 +51,7 @@ public class Position {
             throw new IllegalArgumentException();
         }
 
-        if ( this.getRow() == pos2.getRow() && this.getColumn() == pos2.getColumn() ) {
+        if (this.getRow() == pos2.getRow() && this.getColumn() == pos2.getColumn()) {
             return true;
         }
         return false;
