@@ -2,11 +2,15 @@
 
 > Code files can also be found at [src](./src)
 
+# level 1
+
 ## 4 Experiment
 
-### 4.1.1 Tasks
+### Analysis of UART Data Frames - Send
 
-a) Write a C Program ...
+#### 4.1.1 Tasks
+
+a) Write a C program that continuously emits the character “a” on the UART0. Configure the UART0 using SMCLK, 4800 baud, 8 data bits, no parity, and 1 stop bit. Use ACLK as the source for the baud rate generator.
 
 c program: 
 
@@ -126,3 +130,19 @@ create compile-commands.json - needed to get the clangd lsp server running:
 ```bash
 bear -- make
 ```
+
+b) Use a terminal program on the host to verify the correct operation of your program.
+
+Using screen:
+
+```bash
+TERM=xterm sudo screen /dev/ttyACM1 9600
+```
+
+### Analysis of UART Data Frames - Send & Receive
+
+#### 4.2.1 Tasks
+
+a) Write a C program that continuously waits for a lower case character received by UART RX and emits the corresponding upper case letter on UART TX. Configure the UART for 9600 bauds, 8 data bits, no parity, 1 stop bit. Configure SMCLK as the source for the baud-rate generator (SMCLK=1MHz). Use the Hyperterminal as remote station.
+
+
