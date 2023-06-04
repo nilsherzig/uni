@@ -35,6 +35,7 @@ public class Queen extends Figure {
                 return true; 
             }
         }
+
         if (colHasChanged || rowHasChanged) {
             if (colChange == 0) {
                 return true; 

@@ -28,10 +28,6 @@ public class Bishop extends Figure {
             return false;
         }
 
-        if (colChange == rowChange) {
-            return true; 
-        }
-
-        return false;
+        return colChange == rowChange;
     }
 }

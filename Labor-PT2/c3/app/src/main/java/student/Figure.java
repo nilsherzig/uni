@@ -26,7 +26,7 @@ public class Figure {
         return "Unbekannte Figur"; // will be overwritten by subclasses
     }
 
-    public boolean isBlack() {
+    public boolean getBlack() {
         return black;
     }
 
@@ -38,7 +38,7 @@ public class Figure {
         StringBuilder sb = new StringBuilder();
         sb.append(getLabel());
         sb.append(" (");
-        sb.append(isBlack() ? "schwarz" : "weiß");
+        sb.append(getBlack() ? "schwarz" : "weiß");
         sb.append(")");
         return sb.toString();
     }

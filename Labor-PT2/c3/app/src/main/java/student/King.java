@@ -3,11 +3,11 @@ package student;
 public class King extends Figure {
 
     public King(boolean isBlack) {
-		super(isBlack);
-	}
+        super(isBlack);
+    }
 
-	public char getSymbol() {
-        return (isBlack() ? '♚' : '♔');
+    public char getSymbol() {
+        return (getBlack() ? '♚' : '♔');
     }
 
     public String getLabel() {
@@ -32,20 +32,19 @@ public class King extends Figure {
 
         if (colHasChanged && rowHasChanged) {
             if (colChange == 1 && rowChange == 1) {
-                return true; 
+                return true;
             }
         }
 
         if (colHasChanged || rowHasChanged) {
             if (colChange == 0 && rowChange == 1) {
-                return true; 
+                return true;
             }
 
             if (colChange == 1 && rowChange == 0) {
-                return true; 
+                return true;
             }
         }
-
 
         return false;
     }

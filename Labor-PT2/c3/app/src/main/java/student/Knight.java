@@ -3,11 +3,11 @@ package student;
 public class Knight extends Figure {
 
     public Knight(boolean isBlack) {
-		super(isBlack);
-	}
+        super(isBlack);
+    }
 
-	public char getSymbol() {
-        return (isBlack() ? '♞' : '♘');
+    public char getSymbol() {
+        return (getBlack() ? '♞' : '♘');
     }
 
     public String getLabel() {

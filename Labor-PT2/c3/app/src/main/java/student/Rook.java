@@ -3,11 +3,11 @@ package student;
 public class Rook extends Figure {
 
     public Rook(boolean isBlack) {
-		super(isBlack);
-	}
+        super(isBlack);
+    }
 
-	public char getSymbol() {
-        return (isBlack() ? '♜' : '♖');
+    public char getSymbol() {
+        return (getBlack() ? '♜' : '♖');
     }
 
     public String getLabel() {
@@ -25,7 +25,7 @@ public class Rook extends Figure {
 
         // check if both changed
         if (colChange && rowChange) {
-            return false; 
+            return false;
         }
 
         // check if one changed

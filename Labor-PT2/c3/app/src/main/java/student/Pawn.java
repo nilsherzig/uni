@@ -3,11 +3,11 @@ package student;
 public class Pawn extends Figure {
 
     public Pawn(boolean isBlack) {
-		super(isBlack);
-	}
+        super(isBlack);
+    }
 
-	public char getSymbol() {
-        return (isBlack() ? '♟' : '♙');
+    public char getSymbol() {
+        return (getBlack() ? '♟' : '♙');
     }
 
     public String getLabel() {
@@ -24,7 +24,7 @@ public class Pawn extends Figure {
             return false;
         }
 
-        if (isBlack()) {
+        if (getBlack()) {
             // check if moves down
             if (currentPos.getRow() >= wantedPos.getRow()) {
                 return false;
