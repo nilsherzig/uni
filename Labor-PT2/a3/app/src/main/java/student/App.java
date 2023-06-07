@@ -24,5 +24,6 @@ public class App {
         System.out.println(pos1.toString());
         System.out.println(pos2.toString());
         System.out.println(pos1.equals(pos2));
+        System.out.println("asdasd");
     }
 }

@@ -60,7 +60,6 @@ public class App {
                     counter += 1;
                 } else {
                     System.out.println("Move isn't legal");
-
                 }
 
             } else {
